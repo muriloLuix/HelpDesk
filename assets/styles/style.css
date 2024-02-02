@@ -7,14 +7,26 @@
 .menu-lateral {
     background-color: #D5882F;
     color: #fff;
-    width: 200px;
+    width: 60px;
     height: 100vh;
     position: fixed;
-    top: 0;
-    left: 0;
+    left: -20px;
     padding-top: 20px;
     top: 13vh;
-    z-index: 1; 
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.menu-lateral:hover {
+    width: 200px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    margin-bottom: 10px; /* Ajusta o espaçamento entre o ícone e os itens do menu */
+    display: block;
+    text-align: center;
 }
 
 .menu-lateral ul {
@@ -22,21 +34,38 @@
     padding: 0;
 }
 
+
+
 .menu-lateral li {
     padding: 10px;
     text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.menu-lateral a:hover{
+    color: #3f290f;
+    transition: 0.3s;
+    transform: scale(1.09);
+}
+
+.menu-lateral:hover li {
+    opacity: 1;
 }
 
 .menu-lateral a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
+    white-space: nowrap;
+    display: block;
 }
 
 header {
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(213,136,47,1) 0%);
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 20px 0px;
     height: 13vh;
     width: 100vw;
     position: relative;
