@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo actuary.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-LC/WFU5xP6GOn/DOGN2B9j+Z5jjYNqpDblZi5f5b6e9voEHK5ckM8Fw/9LELDOVR"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Actuary | Chamados</title>
+  </head>
+  <body>
+    <nav class="menu-lateral">
+      <ul class="accordion-menu">
+        <li>
+          <div class="dropdownlink">
+            <i class="bi bi-info-circle-fill"></i> Chamados
+          </div>
+          <ul class="submenuItems">
+            <li><a href="chamados.html">Acompanhamento de Chamados</a></li>
+            <li><a href="#">Feriados</a></li>
+            <li><a href="#">Configurações</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="dropdownlink">
+            <i class="bi bi-person-circle"></i> Administração
+          </div>
+          <ul class="submenuItems">
+            <li><a href="#">Usuários do Cliente</a></li>
+            <li><a href="#">Usuários do Suporte</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="dropdownlink">
+            <i class="bi bi-newspaper"></i> Relatórios
+          </div>
+          <ul class="submenuItems">
+            <li><a href="#">Relação de Chamados</a></li>
+          </ul>
+        </li>
+      </ul>
+      <span class="logout">
+        <p><i class="bi bi-box-arrow-left"></i> Logout</p>
+      </span>
+    </nav>
+    <header>
+      <section id="header-section">
+        <div class="img-logo">
+          <a href="index.html"
+            ><img src="assets/img/logo-actuary-white.png" alt="Logo Actuary"
+          /></a>
+        </div>
+        <div class="container">
+          <div class="data"></div>
+          <div class="saudacao">
+            <p id="saudacaoTexto"></p>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="tabela-container">
+        <div class="filtro-container">
+          <label for="statusFilter">Status:</label>
+          <select id="statusFilter">
+            <option value="todos" selected disabled>Todos</option>
+            <option value="emAndamento">Em Andamento</option>
+            <option value="emAnalise">Em Análise</option>
+          </select>
+        
+          <label for="clienteFilter">Cliente:</label>
+          <select id="clienteFilter">
+            <option value="todos" selected disabled>Todos</option>
+            <option value="paranagua">Paranaguá</option>
+            <option value="joinville">Joinville</option>
+          </select>
+        
+          <label for="responsavelFilter">Responsável:</label>
+          <select id="responsavelFilter">
+            <option value="todos" selected disabled>..:Selecione:..</option>
+            <option value="bernadete">Vitor</option>
+            <option value="gizele">Murilo</option>
+            <option value="gabriel">Gabriel</option>
+            <option value="matheus">Matheus</option>
+          </select>
+        </div>
+        
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th>Número</th>
+              <th>Abertura</th>
+              <th>Cliente</th>
+              <th>Assunto</th>
+              <th>Urg.</th>
+              <th>Previsão</th>
+              <th>Status</th>
+              <th>Usuário</th>
+              <th>Responsável</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="number">205</td>
+              <td>01/02/2024</td>
+              <td>Paranaguá</td>
+              <td>Dedução de IR</td>
+              <td class="urg alta">Alta</td>
+              <td>10/02/2024</td>
+              <td>EM ANDAMENTO</td>
+              <td>Bernadete</td>
+              <td>Murilo</td>
+              <td>
+                <a href="#" target="_blank" title="Alterar">
+                  <i class="bi bi-arrow-up-circle-fill"></i>
+                </a>
+                <a href="#" target="_blank" title="Cancelar Chamado">
+                  <i class="bi bi-x-circle-fill"></i>
+                </a>
+                <a href="#" target="_blank" title="Interagir">
+                  <i class="bi bi-arrow-right-circle-fill"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>02/02/2024</td>
+              <td>Joinville</td>
+              <td>Pensão Alimentícia</td>
+              <td class="urg media">Média</td>
+              <td>15/02/2024</td>
+              <td>EM ANÁLISE</td>
+              <td>Gizele</td>
+              <td>Vitor</td>
+              <td><a href="#" target="_blank" title="Alterar">
+                <i class="bi bi-arrow-up-circle-fill"></i>
+              </a>
+              <a href="#" target="_blank" title="Cancelar Chamado">
+                <i class="bi bi-x-circle-fill"></i>
+              </a>
+              <a href="#" target="_blank" title="Interagir">
+                <i class="bi bi-arrow-right-circle-fill"></i>
+              </a></td>
+            </tr>
+            <tr>
+              <td>57</td>
+              <td>22/02/2024</td>
+              <td>Jaguariariva</td>
+              <td>Novo Reajuste</td>
+              <td class="urg baixa">Baixa</td>
+              <td>15/02/2024</td>
+              <td>EM DESENVOLVIMENTO</td>
+              <td>Viviane Carpinski</td>
+              <td>Gabriel</td>
+              <td><a href="#" target="_blank" title="Alterar">
+                <i class="bi bi-arrow-up-circle-fill"></i>
+              </a>
+              <a href="#" target="_blank" title="Cancelar Chamado">
+                <i class="bi bi-x-circle-fill"></i>
+              </a>
+              <a href="#" target="_blank" title="Interagir">
+                <i class="bi bi-arrow-right-circle-fill"></i>
+              </a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/date.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/cor.js"></script>
+  </body>
+</html>
