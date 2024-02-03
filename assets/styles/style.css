@@ -1,109 +1,153 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .menu-lateral {
-    background-color: #D5882F;
-    color: #fff;
-    width: 60px;
-    height: 100vh;
-    position: fixed;
-    left: -20px;
-    padding-top: 20px;
-    top: 13vh;
-    z-index: 1;
-    overflow: hidden;
-    transition: width 0.3s ease;
+  background: rgb(214, 108, 53);
+  background: linear-gradient(
+    0deg,
+    rgba(214, 108, 53, 1) 0%,
+    rgba(220, 150, 54, 1) 100%
+  );
+  color: #fff;
+  width: 15vw;
+  height: 100vh;
+  position: fixed;
+  padding-top: 20px;
+  top: 13vh;
+  z-index: 1;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu-lateral:hover {
-    width: 200px;
+.accordion-menu li.open .dropdownlink {
+  color: #ca3236;
 }
 
-.menu-icon {
-    font-size: 24px;
-    margin-bottom: 10px; /* Ajusta o espaçamento entre o ícone e os itens do menu */
-    display: block;
-    text-align: center;
+.fa-chevron-down {
+  transform: rotate(180deg);
 }
 
-.menu-lateral ul {
-    list-style: none;
-    padding: 0;
+.accordion-menu li:last-child .dropdownlink {
+  border-bottom: 0;
+}
+.dropdownlink {
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 45px;
+  font-size: 18px;
+  color: #212121;
+  position: relative;
+  transition: all 0.4s ease-out;
+  font-weight: 600;
 }
 
-
-
-.menu-lateral li {
-    padding: 10px;
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-    opacity: 0;
-    transition: 0.3s ease;
+.dropdownlink:hover {
+  transform: scale(1.09);
+  transition: 0.3s;
+}
+.fa-chevron-down {
+  right: 12px;
+  left: auto;
 }
 
-.menu-lateral a:hover{
-    color: #3f290f;
-    transition: 0.3s;
-    transform: scale(1.09);
+.submenuItems {
+  display: none;
+  background: #db9236;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-.menu-lateral:hover li {
-    opacity: 1;
+li {
+  list-style-type: none;
+  font-family: "Outfit", sans-serif;
 }
-
-.menu-lateral a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    white-space: nowrap;
-    display: block;
+.submenuItems a {
+  display: block;
+  color: #fff;
+  padding: 12px 12px 12px 45px;
+  transition: all 0.4s ease-out;
+}
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
 }
 
 header {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(213,136,47,1) 0%);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 20px 0px;
-    height: 13vh;
-    width: 100vw;
-    position: relative;
-    z-index: 2;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(213, 136, 47, 1) 0%
+  );
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 20px 0px;
+  height: 13vh;
+  width: 100vw;
+  position: relative;
+  z-index: 2;
 }
 
 #header-section {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
+.calls {
+  background: #3f290f;
+}
 .img-logo {
-    margin-top: 1.5em;
-    margin-left: 1em;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  margin-top: 1.5em;
+  margin-left: 1em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .img-logo:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .img-logo:active {
-    transform: scale(0.09);
+  transform: scale(0.09);
 }
-
 .container {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 20px;
-    text-align: right;
-    margin-top: 2em;
-    margin-right: 1em;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  text-align: right;
+  margin-top: 2em;
+  margin-right: 1em;
 }
 
 .data {
-    color: #3f290f;
+  color: #3f290f;
 }
 
 .saudacao {
-    color: #f0f8ff;
+  color: #f0f8ff;
+}
+
+.logout {
+  margin-bottom: 60%;
+  padding: 15px 15px 15px 45px;
+  font-size: 22px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  color: #ca3236;
+}
+
+.logout p {
+  cursor: pointer;
+  max-width: 80px;
+  transition: 0.3s;
+}
+.logout p:hover {
+  transform: scale(1.09);
+  transition: 0.3s;
 }

@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/logo actuary.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-LC/WFU5xP6GOn/DOGN2B9j+Z5jjYNqpDblZi5f5b6e9voEHK5ckM8Fw/9LELDOVR" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo actuary.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-LC/WFU5xP6GOn/DOGN2B9j+Z5jjYNqpDblZi5f5b6e9voEHK5ckM8Fw/9LELDOVR"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
     <title>Actuary | HelpDesk</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="menu-lateral">
-        <i class="fas fa-bars menu-icon"></i>
-        <ul>
-            <li><a href="#">Chamados</a></li>
+      <ul class="accordion-menu">
+        <li>
+          <div class="dropdownlink">Chamados</div>
+          <ul class="submenuItems">
+            <li><a href="#">Acompanhamento de Chamados</a></li>
             <li><a href="#">Feriados</a></li>
             <li><a href="#">Configurações</a></li>
-        </ul>
+          </ul>
+        </li>
+        <li>
+          <div class="dropdownlink">Administração</div>
+          <ul class="submenuItems">
+            <li><a href="#">Usuário Cliente</a></li>
+            <li><a href="#">Usuários do Suporte</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="dropdownlink">Relatórios</div>
+          <ul class="submenuItems">
+            <li><a href="#">Relação de Chamados</a></li>
+          </ul>
+        </li>
+      </ul>
+      <span class="logout">
+        <p>Logout</p>
+      </span>
     </nav>
     <header>
-        <section id="header-section">
-            <div class="img-logo">
-                <a href="https://www.actuary.com.br" target="_blank"><img src="assets/img/logo-actuary-white.png" alt="Logo Actuary"></a>
-            </div>
-            <div class="container">
-                <div class="data">
-
-                </div>
-            <div class="saudacao">
-                <p id="saudacaoTexto">
-                    
-                </p>
-            </div>
-            </div>
-        </section>
+      <section id="header-section">
+        <div class="img-logo">
+          <a href="https://www.actuary.com.br" target="_blank"
+            ><img src="assets/img/logo-actuary-white.png" alt="Logo Actuary"
+          /></a>
+        </div>
+        <div class="container">
+          <div class="data"></div>
+          <div class="saudacao">
+            <p id="saudacaoTexto"></p>
+          </div>
+        </div>
+      </section>
     </header>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="assets/js/date.js"></script>
     <script src="assets/js/menu.js"></script>
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
