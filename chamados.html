@@ -51,6 +51,9 @@
             <li><a href="#">Relação de Chamados</a></li>
           </ul>
         </li>
+        <li>
+          <div class="dropdownlink2"><a href="#" target="_blank"><i class="bi bi-server"></i> dotProject</a></div>
+        </li>
       </ul>
       <span class="logout">
         <p><i class="bi bi-box-arrow-left"></i> Logout</p>
@@ -77,33 +80,33 @@
           <label for="statusFilter">Status:</label>
           <select id="statusFilter">
             <option value="todos" selected disabled></option>
-            <option value="emAndamento">Em Andamento</option>
-            <option value="emAnalise">Em Análise</option>
-            <option value="emAnalise">Em Desenvolvimento</option>
-            <option value="emAnalise">Próxima Versão</option>
+            <option value="Em Andamento">Em Andamento</option>
+            <option value="Em Análise">Em Análise</option>
+            <option value="Em Desenvolvimento">Em Desenvolvimento</option>
+            <option value="Próxima Versão">Próxima Versão</option>
           </select>
         
           <label for="clienteFilter">Cliente:</label>
           <select id="clienteFilter">
             <option value="todos" selected disabled></option>
-            <option value="paranagua">Paranaguá</option>
+            <option value="paranaguá">Paranaguá</option>
             <option value="joinville">Joinville</option>
-            <option value="joinville">Jaguariariva</option>
-            <option value="joinville">Arapoti</option>
-            <option value="joinville">Londrina</option>
-            <option value="joinville">Campo Mourão</option>
+            <option value="jaguariariva">Jaguariariva</option>
+            <option value="arapoti">Arapoti</option>
+            <option value="londrina">Londrina</option>
+            <option value="campo mourão">Campo Mourão</option>
           </select>
         
           <label for="responsavelFilter">Responsável:</label>
           <select id="responsavelFilter">
             <option value="todos" selected disabled></option>
-            <option value="bernadete">Vitor</option>
-            <option value="gizele">Murilo</option>
+            <option value="vitor">Vitor</option>
+            <option value="murilo">Murilo</option>
             <option value="gabriel">Gabriel</option>
             <option value="matheus">Matheus</option>
           </select>
+          <i class="bi bi-filter-circle-fill" id="limparFiltrosBtn"> Remover Filtro</i>
         </div>
-        
         <table class="tabela">
           <thead>
             <tr>
@@ -184,6 +187,12 @@
             </tr>
           </tbody>
         </table>
+        <div class="arrows">
+          <i class="bi bi-arrow-bar-left"></i>
+          <i class="bi bi-arrow-left"></i>
+          <i class="bi bi-arrow-right"></i>
+          <i class="bi bi-arrow-bar-right"></i>
+        </div>
       </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -191,5 +200,8 @@
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/cor.js"></script>
+    <script src="assets/js/filtro.js"></script>
+    </script>
+    
   </body>
 </html>

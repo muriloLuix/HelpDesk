@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +54,27 @@
 }
 
 .dropdownlink:hover {
+  transform: scale(1.09);
+  transition: 0.3s;
+}
+
+.dropdownlink2 {
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 45px;
+  font-size: 18px;
+  color: #212121;
+  position: relative;
+  transition: all 0.4s ease-out;
+  font-weight: 600;
+}
+
+.dropdownlink2 a{
+  text-decoration: none;
+  color: #212121;
+}
+
+.dropdownlink2:hover {
   transform: scale(1.09);
   transition: 0.3s;
 }
@@ -172,7 +193,7 @@ header {
   display: inline-block;
 }
 
-.filtro-container{
+.filtro-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,24 +283,46 @@ i {
   color: #008000;
 }
 
-.filtro-container label{
-  font-family: 'Varela Round', sans-serif;
+.filtro-container {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.filtro-container label {
+  font-family: "Varela Round", sans-serif;
   padding: 10px 20px;
 }
 
-.filtro-container select{
+.filtro-container select {
   border-radius: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 
-.filtro-container select:hover{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+.filtro-container select:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.filtro-container option{
-  font-family: 'Roboto Flex', sans-serif;
+.filtro-container option {
+  font-family: "Roboto Flex", sans-serif;
   text-align: center;
+}
+
+.bi-filter-circle-fill{
+  color: rgb(106, 106, 209);
+  cursor: pointer;
+  padding: 0;
+  margin-left: 2em;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bi-arrow-bar-left{
+  padding: 0;
 }
 
 .animated-select {
@@ -289,5 +332,5 @@ i {
 }
 
 .animated-select.active {
-  max-height: 1000px; /* ajuste conforme necessário */
+  max-height: 1000px; 
 }
