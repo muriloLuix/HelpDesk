@@ -12,14 +12,14 @@ $(function() {
     Accordion.prototype.dropdown = function(e) {
       var $el = e.data.el,
           $this = $(this),
-          //this is the ul.submenuItems
+          
           $next = $this.next();
       
       $next.slideToggle();
       $this.parent().toggleClass('open');
       
       if(!e.data.multiple) {
-        //show only one menu at the same time
+        
         $el.find('.submenuItems').not($next).slideUp().parent().removeClass('open');
       }
     }
