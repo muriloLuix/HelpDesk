@@ -355,3 +355,18 @@ i {
 .animated-select.active {
   max-height: 1000px;
 }
+
+/* .is-orange{
+  background: rgb(214, 108, 53);
+  background: linear-gradient(
+    0deg,
+    rgba(214, 108, 53, 1) 0%,
+    rgba(220, 150, 54, 1) 100%
+  );
+}
+
+.is-dark{
+  color: #fff;
+  background-color: #1d1a1a;
+} */
+
