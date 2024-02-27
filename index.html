@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.1" />
-    <link
-      rel="shortcut icon"
-      href="assets/img/logo actuary.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha384-LC/WFU5xP6GOn/DOGN2B9j+Z5jjYNqpDblZi5f5b6e9voEHK5ckM8Fw/9LELDOVR"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="assets/styles/style.css" />
-    <title>Actuary | HelpDesk</title>
-  </head>
-  <body>
-    <nav class="menu-lateral">
-      <ul class="accordion-menu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.1" />
+  <link rel="shortcut icon" href="assets/img/logo actuary.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-LC/WFU5xP6GOn/DOGN2B9j+Z5jjYNqpDblZi5f5b6e9voEHK5ckM8Fw/9LELDOVR" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <title>Actuary | HelpDesk</title>
+</head>
+
+<body class="is-white">
+  <nav class="menu-lateral">
+    <ul class="accordion-menu">
+        <button id="switchBtn">
+          Trocar Cor
+        </button>
         <li>
-          <div class="dropdownlink"><i class="bi bi-info-circle-fill"></i>   Chamados</div>
+          <div class="dropdownlink"><i class="bi bi-info-circle-fill"></i> Chamados</div>
           <ul class="submenuItems">
             <li><a href="chamados.html">Acompanhamento de Chamados</a></li>
             <li><a href="#">Feriados</a></li>
@@ -47,36 +41,33 @@
         </li>
         <li>
           <div class="dropdownlink2"><a href="http://intranet.actuary.com.br/dotProject-2.2.0/" target="_blank">
-            <img src="assets/img/dotproject-png.png" alt="Logo Dot Project" class="dot"> dotProject</a></div>
+              <img src="assets/img/dotproject-png.png" alt="Logo Dot Project" class="dot"> dotProject</a></div>
         </li>
       </ul>
       <span class="logout">
         <p><i class="bi bi-box-arrow-left"></i> Logout</p>
       </span>
     </nav>
-    <header>
-      <section id="header-section">
-        <div class="img-logo">
-          <a href="https://www.actuary.com.br" target="_blank"
-            ><img src="assets/img/logo-actuary-white.png" alt="Logo Actuary"
-          /></a>
+  <header>
+    <section id="header-section">
+      <div class="img-logo">
+        <a href="https://www.actuary.com.br" target="_blank"><img src="assets/img/logo-actuary-white.png"
+            alt="Logo Actuary" /></a>
+      </div>
+      <div class="container">
+        <div class="data"></div>
+        <div class="saudacao">
+          <p id="saudacaoTexto">
+          </p>
         </div>
-        <div class="container">
-          <!-- <button id="switchBtn">
-            Trocar Cor
-          </button> -->
-          <div class="data"></div>
-          <div class="saudacao">
-            <p id="saudacaoTexto">
-            </p>
-          </div>
-        </div>
-      </section>
-    </header>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="assets/js/date.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/theme.js"></script>
-  </body>
+      </div>
+    </section>
+  </header>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="assets/js/date.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/theme.js"></script>
+</body>
+
 </html>

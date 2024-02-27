@@ -1,7 +1,9 @@
-// function switchTheme (){
-//     document.body.classList.toggle('is-orange')
-//     document.body.classList.toggle('is-dark')
-// }
+function switchTheme() {
+    document.body.classList.toggle('is-white');
+    document.body.classList.toggle('is-gray');
+    document.querySelectorAll('.menu-lateral').forEach(function(nav) {
+        nav.classList.toggle('nav-dark');
+    });
+}
 
-
-// document.getElementById('switchBtn').addEventListener('click', switchTheme)
+document.getElementById('switchBtn').addEventListener('click', switchTheme);
