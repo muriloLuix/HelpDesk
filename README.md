@@ -1,0 +1,3 @@
+Welcome to Ticket Control, a mini-software developed by me to facilitate the management of support requests. The aim of this software is to enable support users to communicate directly with the company's developers, effectively conveying customer needs. This project is built on the open-source DotProject software and offers a variety of features, including customizable filters, interactive buttons, logos, and welcome messages. Please note that the project is still under development, with further updates to come. I hope you enjoy and appreciate my work.
+
+To view, click on this link: https://muriloluix.github.io/HelpDesk/
