@@ -156,18 +156,20 @@ header {
 
 /* Logo Styles */
 
-.img-logo {
-  margin-top: 1.5em;
-  margin-left: 1em;
+.img-logo img {
+  margin-top: 2%;
+  margin-left: 20%;
+  width: 100px;
+  height: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.img-logo:hover {
+.img-logo img:hover {
   transform: scale(1.05);
 }
 
-.img-logo:active {
+.img-logo img:active {
   transform: scale(0.09);
 }
 
